@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Akshit Rai Kakkar— Software Engineer</title>
+  <meta name="description" content="Akshit's personal site — software engineer, maker, and open-source enthusiast." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" href="favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Akshit Rai Kakkar</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <button id="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">🌙</button>
+        <a class="cta" href="#contact">Hire me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero-title">Akshit Rai Kakkar</h1>
+          <p class="hero-sub">I build backend systems. Clean code. Clear logic. No noise.</p>
+          <p class="hero-links">
+            <a class="btn" href="#projects">My work</a>
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </p>
+        </div>
+
+        <div class="hero-card" aria-hidden="false">
+          <div class="profile">
+            <img src="myimage.jpeg" alt="Akshit Rai" class="avatar" />
+            <p class="role">Software Engineer · Backend Developer</p>
+            <ul class="meta">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>I build backend systems focused on correctness, performance, and long-term maintainability.
+My work revolves around Java, Spring Boot, and clean API design. I care about clear architecture, predictable behavior, and code that scales under load.
+Outside of coding, I focus on physical training and disciplined routines that support long-term performance.</p>
+        <ul class="skills">
+              <li>Java · OOP · JVM</li>
+              <li>Spring Boot · REST APIs</li>
+              <li>SQL · Database Design</li>
+              <li>DSA · Problem Solving</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div class="grid projects-grid" role="list">
+          <article class="card" role="listitem">
+            <h3>Project One</h3>
+            <p class="muted">Soon!</p>
+            <p class="card-footer">
+              <a href="#" class="link">View</a>
+              <span class="tag">Open Source</span>
+            </p>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Project Two</h3>
+            <p class="muted">Soon!</p>
+            <p class="card-footer">
+              <a href="#" class="link">View</a>
+              <span class="tag">SaaS</span>
+            </p>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Project Three</h3>
+            <p class="muted">Soon!</p>
+            <p class="card-footer">
+              <a href="#" class="link">Explore</a>
+              <span class="tag">CLI</span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>I'm open to contracting, full-time roles, and collaborations. Send a message or connect via email.</p>
+
+        <form class="contact-form" action="mailto:you@example.com" method="GET" aria-label="Contact form">
+          <label>
+            <span class="label-text">Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            <span class="label-text">Email</span>
+            <input type="email" name="email" placeholder="you@domain.com" required />
+          </label>
+          <label>
+            <span class="label-text">Message</span>
+            <textarea name="body" rows="5" placeholder="Quick hello..." required></textarea>
+          </label>
+          <p>
+            <button class="btn" type="submit">Send</button>
+            <a class="link" href="mailto:you@example.com">Or email me directly</a>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Akshit Rai Kakkar— Built with care.</p>
+      <p class="socials">
+         <a href="https://github.com/AkshitRaiKakkar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+         <a href="https://www.linkedin.com/in/akshit-rai-kakkar-75720430b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+         <a href="https://x.com/AkshitKakk69050" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
