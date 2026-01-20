@@ -1,19 +1,44 @@
 <!doctype html>
+<!-- 
+  Document type declaration
+  Ensures the browser renders in standards mode
+-->
 <html lang="en">
 <head>
+  <!-- Character encoding for universal text support -->
   <meta charset="utf-8" />
+
+  <!-- Responsive scaling for mobile and tablet devices -->
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- Page title shown in browser tab -->
   <title>Akshit Rai Kakkar— Software Engineer</title>
+
+  <!-- SEO description for xsearch engines -->
   <meta name="description" content="Akshit's personal site — software engineer, maker, and open-source enthusiast." />
+
+  <!-- Browser theme color (used on mobile browsers) -->
   <meta name="theme-color" content="#0b1020" />
+
+  <!-- Website favicon -->
   <link rel="icon" href="favicon.svg" />
+
+  <!-- Google Font: Inter (clean, modern, professional font) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <!-- ================= HEADER / NAVIGATION ================= -->
   <header class="site-header">
     <div class="container header-inner">
+      
+      <!-- Brand / Logo -->
       <a class="brand" href="#home">Akshit Rai Kakkar</a>
+
+      <!-- Primary navigation menu -->
       <nav aria-label="Main navigation">
         <ul class="nav">
           <li><a href="#about">About</a></li>
@@ -22,56 +47,81 @@
         </ul>
       </nav>
 
+      <!-- Header action buttons -->
       <div class="actions">
+        <!-- Theme toggle button (light/dark mode) -->
         <button id="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">🌙</button>
+
+        <!-- Call-to-action button -->
         <a class="cta" href="#contact">Hire me</a>
       </div>
     </div>
   </header>
 
   <main>
+    <!-- ================= HERO SECTION ================= -->
     <section id="home" class="hero">
       <div class="container hero-grid">
+
+        <!-- Hero text content -->
         <div class="hero-content">
           <p class="eyebrow">Hello, I'm</p>
           <h1 class="hero-title">Akshit Rai Kakkar</h1>
           <p class="hero-sub">I build backend systems. Clean code. Clear logic. No noise.</p>
+
+          <!-- Primary hero buttons -->
           <p class="hero-links">
             <a class="btn" href="#projects">My work</a>
             <a class="btn ghost" href="#contact">Get in touch</a>
           </p>
         </div>
 
+        <!-- Hero profile card -->
         <div class="hero-card" aria-hidden="false">
           <div class="profile">
             <img src="myimage.jpeg" alt="Akshit Rai" class="avatar" />
             <p class="role">Software Engineer · Backend Developer</p>
-            <ul class="meta">
-            </ul>
+
+            <!-- Reserved for future metadata (location, experience, etc.) -->
+            <ul class="meta"></ul>
           </div>
         </div>
+
       </div>
     </section>
 
+    <!-- ================= ABOUT SECTION ================= -->
     <section id="about" class="section">
       <div class="container">
         <h1>About</h1>
-        <p>I build backend systems focused on correctness, performance, and long-term maintainability.
-My work revolves around Java, Spring Boot, and clean API design. I care about clear architecture, predictable behavior, and code that scales under load.
-Outside of coding, I focus on physical training and disciplined routines that support long-term performance.</p>
+
+        <!-- Personal summary -->
+        <p>
+          I build backend systems focused on correctness, performance, and long-term maintainability.
+          My work revolves around Java, Spring Boot, and clean API design. I care about clear architecture,
+          predictable behavior, and code that scales under load.
+          Outside of coding, I focus on physical training and disciplined routines that support long-term performance.
+        </p>
+
+        <!-- Skill list -->
         <ul class="skills">
-              <li>Java · OOP · JVM</li>
-              <li>Spring Boot · REST APIs</li>
-              <li>SQL · Database Design</li>
-              <li>DSA · Problem Solving</li>
+          <li>Java · OOP · JVM</li>
+          <li>Spring Boot · REST APIs</li>
+          <li>SQL · Database Design</li>
+          <li>DSA · Problem Solving</li>
         </ul>
       </div>
     </section>
 
+    <!-- ================= PROJECTS SECTION ================= -->
     <section id="projects" class="section">
       <div class="container">
         <h1>Selected Projects</h1>
+
+        <!-- Projects grid -->
         <div class="grid projects-grid" role="list">
+
+          <!-- Project card 1 -->
           <article class="card" role="listitem">
             <h4>Project One</h4>
             <p class="muted">Soon!</p>
@@ -81,6 +131,7 @@ Outside of coding, I focus on physical training and disciplined routines that su
             </p>
           </article>
 
+          <!-- Project card 2 -->
           <article class="card" role="listitem">
             <h4>Project Two</h4>
             <p class="muted">Soon!</p>
@@ -90,6 +141,7 @@ Outside of coding, I focus on physical training and disciplined routines that su
             </p>
           </article>
 
+          <!-- Project card 3 -->
           <article class="card" role="listitem">
             <h4>Project Three</h4>
             <p class="muted">Soon!</p>
@@ -98,28 +150,39 @@ Outside of coding, I focus on physical training and disciplined routines that su
               <span class="tag">CLI</span>
             </p>
           </article>
+
         </div>
       </div>
     </section>
 
+    <!-- ================= CONTACT SECTION ================= -->
     <section id="contact" class="section">
       <div class="container">
         <h1>Contact</h1>
         <p>I'm open to contracting, full-time roles, and collaborations. Send a message or connect via email.</p>
 
-        <form class="contact-form" action="mailto:you@example.com" method="GET" aria-label="Contact form" >
+        <!-- Contact form (mailto-based) -->
+        <form class="contact-form" action="mailto:you@example.com" method="GET" aria-label="Contact form">
+
+          <!-- Name input -->
           <label>
             <span class="label-text">Name</span>
-            <input type="text" name="name" placeholder="Your name" required style="background-color: rgb(46, 45, 45);"/>
+            <input type="text" name="name" placeholder="Your name" required style="background-color: rgb(46, 45, 45);" />
           </label>
+
+          <!-- Email input -->
           <label>
             <span class="label-text">Email</span>
             <input type="email" name="email" placeholder="you@domain.com" required style="background-color: rgb(46, 45, 45);" />
           </label>
+
+          <!-- Message input -->
           <label>
             <span class="label-text">Message</span>
             <textarea name="body" rows="5" placeholder="Quick hello..." required style="background-color: rgb(46, 45, 45);"></textarea>
           </label>
+
+          <!-- Submit button -->
           <p>
             <button class="btn" type="submit">Send</button>
             <br><br>
@@ -130,17 +193,21 @@ Outside of coding, I focus on physical training and disciplined routines that su
     </section>
   </main>
 
+  <!-- ================= FOOTER ================= -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> Akshit Rai Kakkar— Where ideas become systems.</p>
+
+      <!-- Social media links -->
       <p class="socials">
-         <a href="https://github.com/AkshitRaiKakkar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-         <a href="https://www.linkedin.com/in/akshit-rai-kakkar-75720430b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
-         <a href="https://x.com/AkshitKakk69050" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
+        <a href="https://github.com/AkshitRaiKakkar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/akshit-rai-kakkar-75720430b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://x.com/AkshitKakk69050" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
       </p>
     </div>
   </footer>
 
+  <!-- Main JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>
